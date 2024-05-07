@@ -4,7 +4,9 @@ import Forecast from './components/Forecast.jsx'
 function App() {
   return (
     <>
-     <Forecast/>
+     <Forecast  title= "HOURLY FORECAST"/>
+
+     <Forecast  title= "DAILY FORECAST"/>
 
     </>
   )
