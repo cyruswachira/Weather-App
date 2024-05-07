@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Forecast from './components/Forecast.jsx'
+import axios from 'axios'
 
 function App() {
 
@@ -12,7 +13,16 @@ function App() {
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}`
    
 
-  function searchLocation(){}
+  function searchLocation(e){
+    if(e.key === 'Enter'){
+      axios.get(url)
+      .then((response) => {
+        setData(response.data)
+        console.log(response.data)
+      })
+      setLocation("")
+    }
+  }
   return (
     <>
       <div className='w-full h-full relative'>
@@ -20,7 +30,7 @@ function App() {
      <div className='text-center p-4'>
       <input type="text"  className='py-3 px-6 w-[700px] text-lg rounded-3xl border border-gray-100 text-black focus:outline-none' placeholder='Enter Location' value = {location} onChange={(e) => setLocation(e.target.value)} onKeyDownCapture={searchLocation}/>
      </div>
-               
+                <Forecast foreCastData  ={data} />
       </div>
 
     </>
