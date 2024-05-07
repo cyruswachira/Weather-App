@@ -30,8 +30,9 @@ function App() {
      <div className='text-center p-4'>
       <input type="text"  className='py-3 px-6 w-[700px] text-lg rounded-3xl border border-gray-100 text-black focus:outline-none' placeholder='Enter Location' value = {location} onChange={(e) => setLocation(e.target.value)} onKeyDownCapture={searchLocation}/>
      </div>
-                <Forecast foreCastData  ={data} />
+     <Forecast foreCastData={data} />        
       </div>
+      
 
     </>
   )

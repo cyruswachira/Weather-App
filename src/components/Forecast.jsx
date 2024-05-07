@@ -1,17 +1,19 @@
-function Forecast({foreCastData}) {
+import React from "react";
 
+
+function Forecast({ foreCastData }) {
   return (
-    <div>
-     {foreCastData.weather ? (
-
-      <div className="w-[500px] h=[250px] bg-blue-300  shadow-lg rounded" ></div>
-     ):null}
+    <div className="w-[500px] h-[250px] bg-blue-300 shadow-ig rounded-xl m-auto relative px-6 top-[10%]">
+      {foreCastData.weather? (
+        <div>
+          
+        </div>
+      ) : null}
     </div>
-  )
-}
+  );
+};
 
 export default Forecast;
-
 
 
 
