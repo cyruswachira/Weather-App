@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .forecast-container {
-    background: linear-gradient(to bottom right, #51c4d3, #d5f4e6);
+    background: blue;
     min-height: 100vh;
     padding: 2rem;
     display: flex;
