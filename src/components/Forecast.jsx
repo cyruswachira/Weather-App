@@ -12,6 +12,16 @@ function Forecast() {
 
       </div>
 
+      <div className='flex flex-row items-center justify-between text-white'>
+
+        <div className='flex flex-col items-center justify-center'>
+          <p className=''></p>
+        </div>
+
+
+      </div>
+
+
       
       
     </div>
