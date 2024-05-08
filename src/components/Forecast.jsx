@@ -1,46 +1,28 @@
-import React from "react";
-
-
 function Forecast({ foreCastData }) {
+  if (!foreCastData.weather) {
+    return null;
+  }
+
+  const weatherIconUrl = `http://openweathermap.org/img/w/${foreCastData.weather[0].icon}.png`;
+
   return (
     <div className="w-[500px] h-[250px] bg-blue-300 shadow-ig rounded-xl m-auto relative px-6 top-[10%]">
-      {foreCastData.weather? (
-        <div className="flex justify-between w-full">
-          <div className="w-1 my-4  mx-auto flex justify-between items-center"></div>
-          <div className="flex flex-col items-start justify-between h-full"></div>
-          <div>
-              <p className="text-xl items-center justify-center">{foreCastData.name},
-              {foreCastData.sys.country}</p>
-              <p className="text-xl items-center justify-center">{foreCastData.weather[0].description}</p>
-             
-              <div>
-                <h1 className="text-6xl font-semibold ">{foreCastData.main.temp}:TEMP</h1>
-              </div>
-              <div className="w-1 flex flex-col justify-between items-end">
-              <div className="relative">
-                <img src={foreCastData.weather[0].icon} alt="" />
-                </div>
-              </div>
-            
-
-          </div>
-          
-          
+      <div className="flex flex-col items-left justify-between h-full">
+        <div className="w-full">
+          <p className="text-xl text-left">{foreCastData.name}, {foreCastData.sys.country}</p>
+          <p className="text-xl text-left">{foreCastData.weather[0].description}</p>
         </div>
-      ) : null}
+        <div className="w-1/2">
+          <h1 className="text-6xl font-semibold  text-left  items-end">{foreCastData.main.temp}:TEMP</h1>
+        </div>
+        <div className="w-1/2">
+          <div className="relative">
+            <img src={weatherIconUrl} alt={foreCastData.weather[0].description} className="w-1/2 h-1/2" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Forecast;
-
-
-
-
-
-
-
-
-
-
-
