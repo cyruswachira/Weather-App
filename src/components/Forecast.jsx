@@ -1,3 +1,5 @@
+
+
 function Forecast({ foreCastData }) {
   if (!foreCastData.weather) {
     return null;
