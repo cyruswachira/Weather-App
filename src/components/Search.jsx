@@ -62,6 +62,7 @@ function Search({ onSearchChange }) {
    * Handle changes in the selected city
    * @param {object} searchData - Selected city data
    */
+  
   const handleOnChange = (searchData) => {
     // Update the state with the selected city
     setSearch(searchData);
