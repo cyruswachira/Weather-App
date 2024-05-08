@@ -14,9 +14,14 @@ function Forecast({ foreCastData }) {
               <p className="text-xl items-center justify-center">{foreCastData.weather[0].description}</p>
              
               <div>
-                <h1 className="text-6xl font-semibold ">{foreCastData.main.temp}TEMP</h1>
+                <h1 className="text-6xl font-semibold ">{foreCastData.main.temp}:TEMP</h1>
               </div>
-              <div className="w-1 flex flex-col justify-between items-end"></div>
+              <div className="w-1 flex flex-col justify-between items-end">
+              <div className="relative">
+                <img src={foreCastData.weather[0].icon} alt="" />
+                </div>
+              </div>
+            
 
           </div>
           
