@@ -1,7 +1,19 @@
-
+import "./App.css";
+import Search from "../src/components/Search";
+import Header from "./components/Header";
 
 function App() {
- return(<></>)
+  const handleOnSearchChange = (searchData) => {
+    console.log(searchData);
+  };
+  return (
+    <>
+      <div className="weather-app">
+        <Header />
+        <Search onSearchChange={handleOnSearchChange} />
+      </div>
+    </>
+  );
 }
 
-export default App
+export default App;
