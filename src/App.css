@@ -3,9 +3,6 @@ body {
     margin: 0px;
     background-color: rgb(218, 228, 234);
 }
-.title {
-    font-size: large;
-}
 
 .weather-app {
     max-width: 1000px;
