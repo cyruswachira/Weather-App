@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Search from './Search'; 
 
-function App() {
+function CurrentWeather() {
   const [weatherData, setWeatherData] = useState(null);
   const API_KEY = "08dead54eae17a7e45d013b4a4358b59";
   
@@ -50,7 +50,7 @@ function App() {
   );
 }
 
-export default App;
+export default CurrentWeather;
 
 
 
