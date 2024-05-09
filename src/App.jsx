@@ -1,13 +1,16 @@
 import "./App.css";
 import Header from "./components/Header";
-import CurrentWeather from "./components/CurrentWeather";
+import WeatherMap from "./components/WeatherMap";
+
 
 function App() {
   return (
     <>
       <div className="weather-app">
         <Header />
-        <CurrentWeather />
+        <Search onSearchChange={handleOnSearchChange} />
+        <WeatherMap/>
+ 
       </div>
     </>
   );
