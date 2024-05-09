@@ -11,6 +11,7 @@ body {
   margin: 20px auto;
 }
 
+<<<<<<< HEAD
 .weatherData {
   background-color: rgba(97, 202, 248, 0.2);
   padding: 20px;
@@ -41,3 +42,111 @@ body {
 .location {
   font-weight: bold;
 }
+=======
+  .weatherData {
+    background-color: rgba(97, 202, 248, 0.2); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+  }
+  .list{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+  }
+  .weatherData h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .weatherData p {
+    margin: 10px 0;
+  }
+  
+  .temperature {
+    font-size: 48px;
+    opacity: 1;
+  }
+  .location {
+    font-weight: bold;
+  }
+  
+  .weather-app {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #333;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .mini-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .mini-card {
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    transition: transform 0.3s;
+  }
+  
+  .mini-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .day {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .temperature {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .humidity {
+    font-size: 16px;
+    color: #555;
+  }
+  
+>>>>>>> 12f73abcceda04bf979fccdcd51e73e4ada4b2fa

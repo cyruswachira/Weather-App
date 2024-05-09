@@ -3,7 +3,12 @@ import Search from "../src/components/Search";
 import Header from "./components/Header";
 import WeatherMap from "./components/WeatherMap";
 import CurrentWeather from "./components/CurrentWeather";
+<<<<<<< HEAD
 import Background from "./components/BackGround";
+=======
+import WeatherApp from "./components/WeatherApp";
+
+>>>>>>> 12f73abcceda04bf979fccdcd51e73e4ada4b2fa
 function App() {
   const handleOnSearchChange = (searchData) => {
     console.log(searchData);
@@ -15,8 +20,14 @@ function App() {
       </div>
       <div className="weather-app">
         <Header />
+<<<<<<< HEAD
         <CurrentWeather />
         <WeatherMap />
+=======
+        <CurrentWeather/>
+        <WeatherApp/>
+        <WeatherMap/>
+>>>>>>> 12f73abcceda04bf979fccdcd51e73e4ada4b2fa
       </div>
     </>
   );
