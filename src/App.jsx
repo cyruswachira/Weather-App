@@ -1,22 +1,19 @@
-import "./App.css";
-import Search from "../src/components/Search";
-import Header from "./components/Header";
-import WeatherMap from "./components/WeatherMap";
-import CurrentWeather from "./components/CurrentWeather";
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Header from './components/Header'
+import CurrentWeather from './components/CurrentWeather';
+import WeatherMap from './components/WeatherMap';
 
 function App() {
-  const handleOnSearchChange = (searchData) => {
-    console.log(searchData);
-  };
   return (
-    <>
+    <Router>
       <div className="weather-app">
         <Header />
-        <CurrentWeather/>
-        <WeatherMap/>
+        <Routes>
+          <Route path="/" element={<CurrentWeather />} />
+          <Route path="/weather-map" element={<WeatherMap />} />
+        </Routes>
       </div>
-    </>
+    </Router>
   );
 }
-
 export default App;
