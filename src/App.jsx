@@ -12,7 +12,7 @@ function App() {
     <>
       <div className="weather-app">
         <Header />
-        
+        <CurrentWeather/>
         <WeatherMap/>
       </div>
     </>
