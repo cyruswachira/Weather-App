@@ -34,15 +34,16 @@ const WeatherApp = () => {
 
   return (
     <div className="weather-app">
-      <h1>Weather Forecast</h1>
+     <h1 className="text-4xl font-bold text-center text-blue-600 mb-8">Weather Forecast</h1> 
       <form onSubmit={handleSearch}>
         <input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="Enter location"
+          className="w-full max-w-sm px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:shadow-outline-blue focus:border-blue-300 transition duration-150 ease-in-out sm:text-sm sm:leading-5"
         />
-        <button type="submit">Search</button>
+        <button type="submit"   className="inline-flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue transition duration-150 ease-in-out" >Search</button>
       </form>
       <div className="mini-cards-container">
         {daysOfWeek.map((day, index) => (
