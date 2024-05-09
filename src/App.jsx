@@ -1,19 +1,22 @@
+// App.jsx
+// import React, { useStateContext }  from "react";
 import "./App.css";
-import Search from "../src/components/Search";
 import Header from "./components/Header";
 import WeatherMap from "./components/WeatherMap";
 import CurrentWeather from "./components/CurrentWeather";
+import Background from "./components/Background";
 
 function App() {
-  const handleOnSearchChange = (searchData) => {
-    console.log(searchData);
-  };
+  // const { weather } = useStateContext(); // Assuming weather is a value provided by your context
+  // console.log(weather);
+
   return (
     <>
       <div className="weather-app">
         <Header />
-        <CurrentWeather/>
-        <WeatherMap/>
+        <CurrentWeather />
+        <Background />
+        <WeatherMap />
       </div>
     </>
   );
