@@ -1,7 +1,6 @@
 // App.jsx
 // import React, { useStateContext }  from "react";
 import "./App.css";
-import Background from "./components/BackGround";
 import Header from "./components/Header";
 import WeatherApp from "./components/WeatherApp";
 import WeatherMap from "./components/WeatherMap";
