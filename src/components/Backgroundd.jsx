@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CurrentWeather from "./CurrentWeather"; // Corrected import statement
+import CurrentWeather from "./CurrentWeather"; 
 import Clear from "../assets/images/Clear.jpg";
 import Cloudy from "../assets/images/Cloudy.jpg";
 import Fog from "../assets/images/Fog.jpg";
