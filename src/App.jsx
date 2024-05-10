@@ -3,7 +3,6 @@
 import "./App.css";
 import Header from "./components/Header";
 import WeatherMap from "./components/WeatherMap";
-import CurrentWeather from "./components/CurrentWeather";
 import Background from "./components/Background";
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
     <>
       <div className="weather-app">
         <Header />
-        <CurrentWeather />
         <Background />
         <WeatherMap />
       </div>

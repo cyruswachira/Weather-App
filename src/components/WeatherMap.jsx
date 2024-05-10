@@ -2,7 +2,9 @@
 function WeatherMap() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-4">World Climate Maps</h1>
+      <h1 className="text-5xl font-bold mb-4 flex justify-center">
+        <u>World Climate Maps</u>
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="bg-blue-200 rounded-lg p-4">
           <h2 className="text-xl font-semibold mb-2">North America</h2>
