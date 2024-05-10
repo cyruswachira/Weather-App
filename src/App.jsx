@@ -3,7 +3,7 @@
 import "./App.css";
 import Header from "./components/Header";
 import WeatherMap from "./components/WeatherMap";
-import Background from "./components/Background";
+import Background from "./components/Backgroundd";
 
 function App() {
   // const { weather } = useStateContext(); // Assuming weather is a value provided by your context
