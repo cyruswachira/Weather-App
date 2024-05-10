@@ -1,43 +1,39 @@
 import React from "react";
-import { Link } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 export const Header = () => {
-  /**
-   * The outermost div element provides basic margin styling to the header.
-   */
   return (
     <>
-    <div className="mt-0 mb-5">
-      {/* This div element is used to apply font styling to the title.  */}
-      <div className="font-bold">
-        {/* This div element is used to apply font size styling to the title. */}
-
-        <div className="text-5xl">
-          {/* This div element is used to center the title horizontally.  */}
-
-          <div className="flex justify-center">
-            {/* This div element is used to apply an underline decoration to the title. */}
-
-            <div className="underline decoration-solid">
-              {/* The h1 element represents the title of the Weather App. */}
-
-              <h1>WEATHER APP</h1>
-       
-            </div>
-          </div>
-        </div>
+      <div className="flex justify-center pt-2 text-5xl font-serif">
+        <h1>WEATHER APP</h1>
       </div>
-    </div>
-        <div>   
-        <nav>
-          <ul>
-            <li><Link to="/">Current Weather</Link></li>
-            <li><Link to="/weather-map">Climate Maps</Link></li>
-          </ul>
+
+      <div className="pl-2 flex flex-row">
+        <nav className="flex">
+          <div className="mr-4">
+            <Link to="/" className="hover:text-black hover:text-black">
+              Current Weather
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/weather-map"
+              className="hover:text-black hover:text-black"
+            >
+              Climate Maps
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/weather-app"
+              className="hover:text-black hover:text-black"
+            >
+              Weekly Weather
+            </Link>
+          </div>
         </nav>
-        </div>
-        </>
+      </div>
+    </>
   );
 };
 
