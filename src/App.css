@@ -1,7 +1,9 @@
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 0px;
-    background-color: rgb(218, 228, 234);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0px;
+  background-color: rgb(218, 228, 234);
+  background-position: center;
+  background-size: cover;
 }
 
 .weather-app {
@@ -10,7 +12,7 @@ body {
 }
 
 .weatherData {
-  background-color: rgba(97, 202, 248, 0.2); 
+  background-color: rgba(97, 202, 248, 0.2);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -18,7 +20,8 @@ body {
   height: 250px;
   margin: 10px;
 }
-.list{
+
+.list {
   display: flex;
   flex-wrap: wrap;
   font-size: 25px;
@@ -40,10 +43,48 @@ body {
   font-weight: bold;
 }
 
+
 .weather-app {
   font-family: 'Roboto', sans-serif;
   text-align: center;
 }
+
+  .weatherData {
+    background-color: rgba(97, 202, 248, 0.2); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 250px;
+    margin: 10px;
+  }
+  .list{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 25px;
+  }
+  .weatherData h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .weatherData p {
+    margin: 10px 0;
+  }
+  
+  .temperature {
+    font-size: 48px;
+    opacity: 1;
+  }
+  .location {
+    font-weight: bold;
+  }
+  
+  .weather-app {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+
   
   h1 {
     margin-bottom: 30px;
