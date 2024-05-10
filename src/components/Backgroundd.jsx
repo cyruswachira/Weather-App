@@ -8,7 +8,7 @@ import Snowy from "../assets/images/Snowy.jpg";
 import Stormy from "../assets/images/Stormy.jpg";
 import Sunny from "../assets/images/Sunny.jpg";
 
-function Background() {
+function Backgroundd() {
   const { weather } = CurrentWeather(); 
   const [image, setImage] = useState(Clear);
 
@@ -51,4 +51,4 @@ function Background() {
   );
 }
 
-export default Background;
+export default Backgroundd;
