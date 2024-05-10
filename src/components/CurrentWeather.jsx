@@ -5,9 +5,7 @@ function CurrentWeather() {
   const [weatherData, setWeatherData] = useState(null);
   const API_KEY = "08dead54eae17a7e45d013b4a4358b59";
 
-  useEffect(() => {
-    fetchData('Nairobi');
-  }, []); 
+
 
   const fetchData = (selectedCity) => {
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${selectedCity}&appid=${API_KEY}`;
