@@ -50,12 +50,15 @@ body {
 }
 
   .weatherData {
-    background-color: rgba(97, 202, 248, 0.2); 
+    background-color: rgba(225, 2025,225,0.18); 
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    height: 250px;
+    border: 1px solid rgba(225, 225, 225, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(32, 38, 135, 0.37);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    width: 350px;
+    height: 470px;
     margin: 10px;
   }
   .list{

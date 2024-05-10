@@ -14,20 +14,12 @@ export const APIoptions = {
 // Define the GeoDB API URL
 export const GEO_API_URL = "https://wft-geo-db.p.rapidapi.com/v1/geo";
 
-/**
- * Search component for searching cities using the GeoDB API
- * @param {function} onSearchChange - Callback function to handle changes in the selected city
- */
 
 function Search({ onSearchChange }) {
   // Initialize state to store the selected city
   const [search, setSearch] = useState();
 
-  /**
-   * Load city options based on user input
-   * @param {string} inputValue - User input value for searching cities
-   * @returns {Promise<{options: {value: string, label: string}[]}>} - Promise that resolves to an object containing an array of city options
-   */
+  // Define the handleChange function to handle changes in the selected city
   // Define the loadOptions function to fetch city options from the GeoDB API
   const loadOptions = (inputValue) => {
     // Fetch cities from the API with the given input value as a prefix
@@ -57,12 +49,7 @@ function Search({ onSearchChange }) {
         return { options: [] };
       });
   };
-
-  /**
-   * Handle changes in the selected city
-   * @param {object} searchData - Selected city data
-   */
-  
+   // Function to handle the onChange event of the AsyncPaginate component
   const handleOnChange = (searchData) => {
     // Update the state with the selected city
     setSearch(searchData);
