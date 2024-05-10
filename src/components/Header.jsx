@@ -1,14 +1,13 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
-/**
- * The Header component represents the header section of the Weather App.
- * It is responsible for rendering the title of the application.
- */
+
 export const Header = () => {
   /**
    * The outermost div element provides basic margin styling to the header.
    */
   return (
+    <>
     <div className="mt-0 mb-5">
       {/* This div element is used to apply font styling to the title.  */}
       <div className="font-bold">
@@ -24,11 +23,21 @@ export const Header = () => {
               {/* The h1 element represents the title of the Weather App. */}
 
               <h1>WEATHER APP</h1>
+       
             </div>
           </div>
         </div>
       </div>
     </div>
+        <div>   
+        <nav>
+          <ul>
+            <li><Link to="/">Current Weather</Link></li>
+            <li><Link to="/weather-map">Climate Maps</Link></li>
+          </ul>
+        </nav>
+        </div>
+        </>
   );
 };
 
