@@ -5,45 +5,45 @@ body {
 }
 
 .weather-app {
-    max-width: 1000px;
-    margin: 20px auto;
+  max-width: 1000px;
+  margin: 20px auto;
 }
 
-  .weatherData {
-    background-color: rgba(97, 202, 248, 0.2); 
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    height: 250px;
-    margin: 10px;
-  }
-  .list{
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 25px;
-  }
-  .weatherData h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-  
-  .weatherData p {
-    margin: 10px 0;
-  }
-  
-  .temperature {
-    font-size: 48px;
-    opacity: 1;
-  }
-  .location {
-    font-weight: bold;
-  }
-  
-  .weather-app {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-  }
+.weatherData {
+  background-color: rgba(97, 202, 248, 0.2); 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+}
+.list{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px;
+}
+.weatherData h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.weatherData p {
+  margin: 10px 0;
+}
+
+.temperature {
+  font-size: 48px;
+  opacity: 1;
+}
+.location {
+  font-weight: bold;
+}
+
+.weather-app {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
   
   h1 {
     margin-bottom: 30px;
@@ -90,7 +90,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
+    background-color: gray;
     transition: transform 0.3s;
   }
   
@@ -112,6 +112,6 @@ body {
   
   .humidity {
     font-size: 16px;
-    color: #555;
+    color: black;
   }
   

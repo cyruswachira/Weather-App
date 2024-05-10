@@ -48,7 +48,7 @@ const WeatherApp = () => {
         <button type="submit" className="inline-flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue transition duration-150 ease-in-out">Search</button>
       </form>
 
-      <div className="mini-cards-container grid grid-cols-4 gap-2">
+      <div className="mini-cards-container grid grid-cols-4 gap-1">
         {daysOfWeek.map((day, index) => (
           <div className="mini-card" key={index}>
             <div className="day">{day}</div>
