@@ -4,8 +4,11 @@ import Search from './Search';
 function CurrentWeather() {
   const [weatherData, setWeatherData] = useState(null);
   const API_KEY = "08dead54eae17a7e45d013b4a4358b59";
-
-
+ 
+  // Nairobi is displayed as the default before the user searches for any other city
+  useEffect(() => {
+    fetchData('Nairobi');
+  }, []); 
 
   const fetchData = (selectedCity) => {
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${selectedCity}&appid=${API_KEY}`;
@@ -19,13 +22,15 @@ function CurrentWeather() {
       .catch(error => console.error('Error fetching data:', error));
   };
 
-  const getWeatherIcon = (temperature) => {
-    if (temperature > 25) {
-      return "☀️";
-    } else if (temperature < 8) {
-      return "❄️";
+  const getWeatherIcon = (temperature, weatherCondition) => {
+    if (weatherCondition === 'Rain') {
+      return "🌧️"; //Rain icon - Displayed only if it is raining
+    } else if (temperature > 25) {
+      return "☀️"; // Sunny icon - Displayed if the temperature is above 25 degrees
+    } else if (temperature < 2) {
+      return "❄️"; // Snow icon - Displayed if the temperature is below 2 degrees
     } else {
-      return "🌥️";
+      return "🌥️"; // Default icon indicating calm weather
     }
   };
 
@@ -48,7 +53,7 @@ function CurrentWeather() {
           <p className="temperature">
             {" "}
             {weatherData.main.temp} °C{" "}
-            {getWeatherIcon(parseFloat(weatherData.main.temp))}
+            {getWeatherIcon(parseFloat(weatherData.main.temp), weatherData.weather[0].main)}
           </p>
           <p className="date text-2xl">
             {" "}
@@ -87,6 +92,7 @@ function CurrentWeather() {
 }
 
 export default CurrentWeather;
+
 
 
 
