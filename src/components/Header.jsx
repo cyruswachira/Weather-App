@@ -5,7 +5,9 @@ export const Header = () => {
   return (
     <>
       <div className="flex justify-center pt-2 text-5xl font-serif font-bold">
-        <h1><u>WEATHER APP</u></h1>
+        <h1>
+          <u>WEATHER APP</u>
+        </h1>
       </div>
 
       <div className="pl-2 flex flex-row font-bold mt-5 mb-5">
@@ -20,7 +22,7 @@ export const Header = () => {
               to="/weather-map"
               className="text-black text-black hover:text-white"
             >
-              Weekly Weather
+              Climate Maps
             </Link>
           </div>
           <div>
@@ -28,7 +30,7 @@ export const Header = () => {
               to="/weather-app"
               className="text-black text-black hover:text-white"
             >
-              Climate Maps
+              Weekly Weather
             </Link>
           </div>
         </nav>
