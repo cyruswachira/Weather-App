@@ -20,7 +20,7 @@ export const Header = () => {
               to="/weather-map"
               className="text-black text-black hover:text-white"
             >
-              Climate Maps
+              Weekly Weather
             </Link>
           </div>
           <div>
@@ -28,7 +28,7 @@ export const Header = () => {
               to="/weather-app"
               className="text-black text-black hover:text-white"
             >
-              Weekly Weather
+              Climate Maps
             </Link>
           </div>
         </nav>
