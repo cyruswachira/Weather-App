@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
  let WeatherApp = () => {
-  const [query, setQuery] = useState('');
-  const [weatherData, setWeatherData] = useState({
+  let [query, setQuery] = useState('');
+  let [weatherData, setWeatherData] = useState({
     'Sunday': null,
     'Monday': null,
     'Tuesday': null,
