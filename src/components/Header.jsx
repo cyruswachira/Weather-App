@@ -19,18 +19,18 @@ export const Header = () => {
           </div>
           <div className="mr-5">
             <Link
-              to="/weather-map"
-              className="text-black text-black hover:text-white"
-            >
-              Climate Maps
-            </Link>
-          </div>
-          <div>
-            <Link
               to="/weather-app"
               className="text-black text-black hover:text-white"
             >
               Weekly Weather
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/weather-map"
+              className="text-black text-black hover:text-white"
+            >
+              Climate Maps
             </Link>
           </div>
         </nav>
