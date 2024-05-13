@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import CurrentWeather from "./CurrentWeather"; 
+import CurrentWeather from "./CurrentWeather";
 import Clear from "../assets/images/Clear.jpg";
 import Cloudy from "../assets/images/Cloudy.jpg";
 import Fog from "../assets/images/Fog.jpg";
@@ -9,7 +9,7 @@ import Stormy from "../assets/images/Stormy.jpg";
 import Sunny from "../assets/images/Sunny.jpg";
 
 function Backgroundd() {
-  const { weather } = CurrentWeather(); 
+  const { weather } = CurrentWeather();
   const [image, setImage] = useState(Clear);
 
   useEffect(() => {
@@ -37,7 +37,7 @@ function Backgroundd() {
         setImage(Sunny);
       }
     }
-  }, [weather && weather.conditions]); 
+  }, [weather && weather.conditions]);
 
   return (
     <div>
@@ -46,7 +46,7 @@ function Backgroundd() {
         alt="weather_image"
         className="h-screen w-full fixed left-0 top-0 -z-[10]"
       />{" "}
-      <CurrentWeather /> 
+      <CurrentWeather />
     </div>
   );
 }
