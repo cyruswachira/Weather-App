@@ -12,11 +12,11 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Backgroundd />} />
+
           <Route path="/weather-map" element={<WeatherMap />} />
+          
           <Route path="/Weather-app" element={<WeatherApp />} />
         </Routes>
-
-        
       </div>
     </Router>
   );

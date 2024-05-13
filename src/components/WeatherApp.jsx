@@ -1,13 +1,25 @@
 import React, { useState, useEffect } from 'react';
 
-const WeatherApp = () => {
+ let WeatherApp = () => {
   const [query, setQuery] = useState('');
-  const [weatherData, setWeatherData] = useState({});
-  const [currentDayData, setCurrentDayData] = useState(null);
+  const [weatherData, setWeatherData] = useState({
+    'Sunday': null,
+    'Monday': null,
+    'Tuesday': null,
+    'Wednesday': null,
+    'Thursday': null,
+    'Friday': null,
+    'Saturday': null
+  });
+  let [currentDayData, setCurrentDayData] = useState(null);
 
-  const fetchWeather = async () => {
+  useEffect(() => {
+    fetchWeather('Nairobi');
+  }, []);
+
+   let fetchWeather = async (city) => {
     try {
-      const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${query}&appid=08dead54eae17a7e45d013b4a4358b59&units=metric`);
+      const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=08dead54eae17a7e45d013b4a4358b59&units=metric`);
       if (!response.ok) {
         throw new Error('Failed to fetch weather data');
       }
@@ -30,7 +42,7 @@ const WeatherApp = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    fetchWeather();
+    fetchWeather(query);
   };
 
   const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
