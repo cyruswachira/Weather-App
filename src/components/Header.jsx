@@ -9,16 +9,16 @@ export const Header = () => {
       </div>
 
       <div className="pl-2 flex flex-row">
-        <nav className="flex">
+        <nav className="flex gap-2">
           <div className="mr-4">
-            <Link to="/" className="hover:text-black hover:text-black">
+            <Link to="/" className="text-black text-black hover:text-white">
               Current Weather
             </Link>
           </div>
           <div>
             <Link
               to="/weather-map"
-              className="hover:text-black hover:text-black"
+              className="text-black text-black hover:text-white"
             >
               Climate Maps
             </Link>
@@ -26,7 +26,7 @@ export const Header = () => {
           <div>
             <Link
               to="/weather-app"
-              className="hover:text-black hover:text-black"
+              className="text-black text-black hover:text-white"
             >
               Weekly Weather
             </Link>
